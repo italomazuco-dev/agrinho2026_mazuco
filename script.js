@@ -1,5 +1,15 @@
-window.onload = function(){
+const botoes = document.querySelectorAll(".btn");
 
-alert("🌾 Bem-vindo ao Projeto Agrinho!\n\nConectando o campo e a cidade.");
+botoes.forEach(botao => {
 
-}
+let curtidas = 0;
+
+botao.addEventListener("click", () => {
+
+curtidas++;
+
+botao.querySelector("span").textContent = curtidas;
+
+});
+
+});
